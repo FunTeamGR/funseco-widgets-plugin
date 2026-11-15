@@ -1,0 +1,40 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "funseco/widgets-plugin",
+    "description": "Funseco in-race widgets — challenge, clock, status bars, track list, round score, F7 toggle, join/leave",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2",
+        "funseco/core": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Funseco\\Widgets\\": "src/"
+        }
+    },
+    "extra": {
+        "funseco": {
+            "id": "widgets",
+            "name": "Widgets",
+            "description": "in-race widgets — challenge, clock, status bars, track list, round score, F7 toggle, join/leave",
+            "provider": "Funseco\\Widgets\\WidgetsServiceProvider"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Funseco\\Widgets\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "^10.0",
+        "phpunit/phpunit": "^11.5.3"
+    }
+}
