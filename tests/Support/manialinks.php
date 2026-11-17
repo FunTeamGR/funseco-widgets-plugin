@@ -711,7 +711,7 @@ $config = [
         'widgets_preference_enabled' => '{#server}>> Your record widgets are now permanent shown and your preference was saved, type {#highlite}/eyepiece hide{#server} to hide them.',
         'toggling_disabled' => '{#server}>> Sorry, you can not toggle the record widgets at the moment. There are too many players on the server, so they are in static mode now.',
         'disallow_windows_at_score' => '{#server}>> Could not display this window at score! Please try again when the race is started.',
-        'winning_mail_body' => '{#karma}You won several races and won {#highlite}{1} Coppers{#karma}!{br}$L[tmtp://#addfavourite={2}]Please add {3}{#karma} to favorites!$L',
+        'winning_mail_body' => '{#server}You won several races and won {#highlite}{1} Coppers{#server}!{br}$L[tmtp://#addfavourite={2}]Please add {3}{#server} to favorites!$L',
     ],
     // Bonus-map banner: XAseco put it bottom right (frame 40 -44, label right-aligned).
     // Frame x = 40 - 15 (label offset in Winnings::showHud).
